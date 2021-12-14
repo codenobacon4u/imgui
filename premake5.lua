@@ -18,8 +18,6 @@ project "ImGui"
         "imstb_truetype.h",
         "imgui_demo.cpp",
         "imgui_tables.cpp",
-		"../glm/glm/**.hpp",
-		"../glm/glm/**.inl"
     }
 	
     filter "system:windows"
