@@ -17,6 +17,7 @@ project "ImGui"
         "imstb_textedit.h",
         "imstb_truetype.h",
         "imgui_demo.cpp",
+        "imgui_tables.cpp",
 		"../glm/glm/**.hpp",
 		"../glm/glm/**.inl"
     }
@@ -25,3 +26,12 @@ project "ImGui"
         systemversion "latest"
         cppdialect "C++17"
         staticruntime "On"
+
+        
+    filter "configurations:Debug"
+        runtime "Debug"
+        symbols "on"
+
+    filter "configurations:Release"
+        runtime "Release"
+        optimize "on"
